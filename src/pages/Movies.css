@@ -16,6 +16,18 @@
   color: var(--text-secondary);
 }
 
+.data-source {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+}
+
+.save-message {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
 .filters {
   display: flex;
   flex-direction: column;

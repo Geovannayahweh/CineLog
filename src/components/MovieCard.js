@@ -6,7 +6,7 @@ function StarRating({ rating }) {
   return <span className="stars">{stars.join('')}</span>;
 }
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, onSaveFavorite }) {
   const { title, year, genre, rating, poster, director, trailerUrl, imdbUrl } = movie;
 
   return (
@@ -60,6 +60,15 @@ function MovieCard({ movie }) {
             )}
           </div>
         </div>
+        {onSaveFavorite && (
+          <button
+            className="movie-save-btn"
+            onClick={() => onSaveFavorite(movie)}
+            type="button"
+          >
+            Salvar no banco
+          </button>
+        )}
       </div>
     </div>
   );
