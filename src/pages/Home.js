@@ -47,11 +47,11 @@ function Home() {
         <div className="about-inner">
           <h2>O que é o CineLog?</h2>
           <p>
-            Uma plataforma para explorar filmes, atribuir avaliações, deixar comentários
-            e descobrir novos títulos com base na opinião da comunidade.
+            Uma plataforma para explorar filmes, buscar por título, filtrar por gênero
+            e descobrir novos títulos em destaque no catálogo.
           </p>
           <div className="about-features">
-            {['📽️ Catálogo de Filmes', '⭐ Avaliações', '💬 Comentários', '🏆 Rankings'].map(f => (
+            {['📽️ Catálogo de Filmes', '🔎 Busca por Título', '🏷️ Filtro por Gênero', '🎬 Destaques'].map(f => (
               <span key={f} className="feature-pill">{f}</span>
             ))}
           </div>

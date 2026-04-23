@@ -1,70 +1,80 @@
-<!-- # Getting Started with Create React App
+# CineLog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação web para explorar um catálogo de filmes com destaque na página inicial, busca por título e filtro por gênero.
 
-## Available Scripts
+Projeto desenvolvido em React para apresentação da disciplina de Web Development: Framework.
 
-In the project directory, you can run:
+## Preview das funcionalidades
 
-### `npm start`
+- Catálogo de filmes com cards visuais
+- Busca por título em tempo real
+- Filtro por gênero
+- Seção de equipe com links reais do GitHub e LinkedIn
+- Layout responsivo com identidade visual própria
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router DOM
+- CSS (arquivos por componente/página)
+- Create React App (react-scripts)
 
-### `npm test`
+## Como rodar localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pré-requisito: Node.js e npm instalados.
 
-### `npm run build`
+1. Entre na pasta do projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instale as dependências
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+	npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Rode em modo de desenvolvimento
 
-### `npm run eject`
+	npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Acesse no navegador
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Scripts disponíveis
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Iniciar em desenvolvimento:
 
-## Learn More
+	npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Rodar testes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	npm test -- --watchAll=false
 
-### Code Splitting
+- Gerar build de produção:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+	npm run build
 
-### Analyzing the Bundle Size
+## Estrutura resumida
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+src/
+- components/ -> Header, Footer, Layout, MovieCard, TeamMember
+- data/ -> base local de filmes
+- pages/ -> Home, Movies, Equipe
+- styles/ -> estilos globais
 
-### Making a Progressive Web App
+public/
+- index.html
+- manifest.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Equipe
 
-### Advanced Configuration
+- Delrick Ramos
+  - GitHub: https://github.com/delrickramos
+  - LinkedIn: https://www.linkedin.com/in/delrickramos/
+- Clara Amazonas
+  - GitHub: https://github.com/claraamz
+  - LinkedIn: https://www.linkedin.com/in/clara-amazonas-pereira-da-costa-79445635a/
+- Geovanna Soto
+  - GitHub: https://github.com/Geovannayahweh
+  - LinkedIn: https://www.linkedin.com/in/geovanna-soto-4aaa9b233/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Status do projeto
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+Pronto para demonstração acadêmica, com build e testes básicos validados.

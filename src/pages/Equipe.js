@@ -6,22 +6,22 @@ const membros = [
     nome: "Clara",
     idade: "19",
     cargo: "Desenvolvedora",
-    linkedin: "https://www.linkedin.com/in/clara",
-    github: "https://www.github.com/clara",
+    linkedin: "https://www.linkedin.com/in/clara-amazonas-pereira-da-costa-79445635a/",
+    github: "https://github.com/claraamz",
   },
   {
     nome: "Geovanna",
     idade: "19",
     cargo: "Desenvolvedora",
-    linkedin: "https://www.linkedin.com/in/geovanna",
-    github: "https://www.github.com/geovanna",
+    linkedin: "https://www.linkedin.com/in/geovanna-soto-4aaa9b233/",
+    github: "https://github.com/Geovannayahweh",
   },
   {
     nome: "Delrick",
     idade: "27",
     cargo: "Desenvolvedor",
-    linkedin: "https://www.linkedin.com/in/delrick",
-    github: "https://www.github.com/delrick",
+    linkedin: "https://www.linkedin.com/in/delrickramos/",
+    github: "https://github.com/delrickramos",
   },
 ];
 
@@ -34,7 +34,7 @@ function Equipe() {
           <h1 className="page-title">Nossa Equipe</h1>
           <p className="equipe-desc">
             Somos estudantes apaixonados por tecnologia e cinema, desenvolvendo o CineLog
-            como projeto acadêmico para a disciplina de Desenvolvimento Web.
+            como projeto acadêmico para a disciplina Web Development: Framework.
           </p>
         </div>
 
@@ -56,12 +56,12 @@ function Equipe() {
             <div className="projeto-card">
               <span className="projeto-icon">🛠️</span>
               <h3>Tecnologias</h3>
-              <p>React, React Router, CSS Modules, integração com API externa de filmes (TMDB).</p>
+              <p>React, React Router e CSS customizado para uma interface responsiva.</p>
             </div>
             <div className="projeto-card">
               <span className="projeto-icon">🚀</span>
               <h3>Funcionalidades</h3>
-              <p>Explorar catálogo, atribuir notas, comentar filmes e visualizar rankings da comunidade.</p>
+              <p>Explorar catálogo, buscar por título e filtrar filmes por gênero.</p>
             </div>
           </div>
         </div>
