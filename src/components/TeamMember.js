@@ -1,10 +1,14 @@
 import './TeamMember.css';
 
-function TeamMember({ nome, idade, cargo, linkedin, github }) {
+function TeamMember({ nome, idade, cargo, foto, linkedin, github }) {
   return (
     <div className="team-card">
       <div className="team-avatar">
-        {nome.charAt(0).toUpperCase()}
+        {foto ? (
+          <img src={foto} alt={`Foto de ${nome}`} className="team-avatar-img" />
+        ) : (
+          nome.charAt(0).toUpperCase()
+        )}
       </div>
       <div className="team-info">
         <h3 className="team-name">{nome}</h3>

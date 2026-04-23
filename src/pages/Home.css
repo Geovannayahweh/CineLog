@@ -1,6 +1,5 @@
 .home { min-height: calc(100vh - 70px); }
 
-/* Hero */
 .hero {
   position: relative;
   height: 85vh;
@@ -98,7 +97,6 @@
 
 .hero-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-/* Section */
 .section { padding: 5rem 2rem; }
 
 .section-inner { max-width: 1200px; margin: 0 auto; }
@@ -129,7 +127,6 @@
   gap: 1.5rem;
 }
 
-/* About Banner */
 .about-banner {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);

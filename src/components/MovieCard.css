@@ -81,8 +81,19 @@
 
 .movie-meta {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.movie-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.movie-meta-col-right {
+  align-items: flex-end;
 }
 
 .movie-year {
@@ -106,4 +117,21 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent-gold);
+}
+
+.movie-action-link {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  transition: all 0.2s;
+}
+
+.movie-action-link:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
 }

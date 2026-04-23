@@ -7,7 +7,7 @@ function StarRating({ rating }) {
 }
 
 function MovieCard({ movie }) {
-  const { title, year, genre, rating, poster, director } = movie;
+  const { title, year, genre, rating, poster, director, trailerUrl, imdbUrl } = movie;
 
   return (
     <div className="movie-card">
@@ -30,10 +30,34 @@ function MovieCard({ movie }) {
         </div>
         <h3 className="movie-title">{title}</h3>
         <div className="movie-meta">
-          <span className="movie-year">{year}</span>
-          <div className="movie-rating">
-            <StarRating rating={rating} />
-            <span className="rating-value">{rating.toFixed(1)}</span>
+          <div className="movie-meta-col">
+            <span className="movie-year">{year}</span>
+            {trailerUrl && (
+              <a
+                href={trailerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="movie-action-link"
+              >
+                Trailer
+              </a>
+            )}
+          </div>
+          <div className="movie-meta-col movie-meta-col-right">
+            <div className="movie-rating">
+              <StarRating rating={rating} />
+              <span className="rating-value">{rating.toFixed(1)}</span>
+            </div>
+            {imdbUrl && (
+              <a
+                href={imdbUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="movie-action-link"
+              >
+                Descrição
+              </a>
+            )}
           </div>
         </div>
       </div>

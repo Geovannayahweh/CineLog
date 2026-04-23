@@ -7,7 +7,6 @@ function Movies() {
   const [search, setSearch] = useState('');
   const [genreFilter, setGenreFilter] = useState('Todos');
 
-  // Collect unique genres
   const genres = ['Todos', ...new Set(movies.flatMap(m => m.genre))];
 
   const filtered = movies.filter(movie => {
@@ -24,7 +23,6 @@ function Movies() {
           <p className="page-subtitle">{filtered.length} título{filtered.length !== 1 ? 's' : ''} encontrado{filtered.length !== 1 ? 's' : ''}</p>
         </div>
 
-        {/* Filtros */}
         <div className="filters">
           <input
             type="text"
@@ -46,7 +44,6 @@ function Movies() {
           </div>
         </div>
 
-        {/* Grid */}
         {filtered.length > 0 ? (
           <div className="catalog-grid">
             {filtered.map(movie => (

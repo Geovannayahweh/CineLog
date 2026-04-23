@@ -6,12 +6,12 @@ import './Home.css';
 function Home() {
   const destaque = movies[0];
   const recentes = movies.slice(1, 4);
+  const heroImage = destaque.heroImage || destaque.poster;
 
   return (
     <main className="home">
-      {/* Hero */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: `url(${destaque.poster})` }} />
+        <div className="hero-bg" style={{ backgroundImage: `url(${heroImage})` }} />
         <div className="hero-overlay" />
         <div className="hero-content">
           <span className="hero-badge">🎬 Em Destaque</span>
@@ -27,7 +27,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Filmes Recentes */}
       <section className="section">
         <div className="section-inner">
           <div className="section-header">
@@ -42,7 +41,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Sobre o Projeto */}
       <section className="about-banner">
         <div className="about-inner">
           <h2>O que é o CineLog?</h2>

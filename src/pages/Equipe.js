@@ -6,6 +6,7 @@ const membros = [
     nome: "Clara",
     idade: "19",
     cargo: "Desenvolvedora",
+    foto: "https://avatars.githubusercontent.com/u/180721300?v=4",
     linkedin: "https://www.linkedin.com/in/clara-amazonas-pereira-da-costa-79445635a/",
     github: "https://github.com/claraamz",
   },
@@ -13,6 +14,7 @@ const membros = [
     nome: "Geovanna",
     idade: "19",
     cargo: "Desenvolvedora",
+    foto: "https://avatars.githubusercontent.com/u/158111914?v=4",
     linkedin: "https://www.linkedin.com/in/geovanna-soto-4aaa9b233/",
     github: "https://github.com/Geovannayahweh",
   },
@@ -20,6 +22,7 @@ const membros = [
     nome: "Delrick",
     idade: "27",
     cargo: "Desenvolvedor",
+    foto: "https://avatars.githubusercontent.com/u/230398778?v=4",
     linkedin: "https://www.linkedin.com/in/delrickramos/",
     github: "https://github.com/delrickramos",
   },
@@ -44,7 +47,6 @@ function Equipe() {
           ))}
         </div>
 
-        {/* Sobre o Projeto */}
         <div className="projeto-section">
           <h2 className="projeto-title">Sobre o Projeto</h2>
           <div className="projeto-grid">
