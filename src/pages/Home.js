@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import MovieCard from '../components/MovieCard';
+import TrendingSection from '../components/TrendingSection';
 import movies from '../data/movies';
 import './Home.css';
 
@@ -23,7 +24,7 @@ function Home() {
           <div className="hero-genres">
             {destaque.genre.map(g => <span key={g} className="genre-badge">{g}</span>)}
           </div>
-          <Link to="/filmes" className="hero-btn">Explorar Catálogo →</Link>
+          <Link to={`/filmes/${destaque.id}`} className="hero-btn">Ver detalhes →</Link>
         </div>
       </section>
 
@@ -41,6 +42,8 @@ function Home() {
         </div>
       </section>
 
+      <TrendingSection />
+
       <section className="about-banner">
         <div className="about-inner">
           <h2>O que é o CineLog?</h2>
@@ -49,7 +52,7 @@ function Home() {
             e descobrir novos títulos em destaque no catálogo.
           </p>
           <div className="about-features">
-            {['📽️ Catálogo de Filmes', '🔎 Busca por Título', '🏷️ Filtro por Gênero', '🎬 Destaques'].map(f => (
+            {['📽️ Catálogo de Filmes', '🔎 Busca por Título', '🏷️ Filtro por Gênero', '💬 Avaliações da Comunidade'].map(f => (
               <span key={f} className="feature-pill">{f}</span>
             ))}
           </div>
